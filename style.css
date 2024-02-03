@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: rgba(2,2,27,1);
+    opacity: 1;
+    background-image:  linear-gradient(30deg, #011027 12%, transparent 12.5%, transparent 87%, #011027 87.5%, #011027), linear-gradient(150deg, #011027 12%, transparent 12.5%, transparent 87%, #011027 87.5%, #011027), linear-gradient(30deg, #011027 12%, transparent 12.5%, transparent 87%, #011027 87.5%, #011027), linear-gradient(150deg, #011027 12%, transparent 12.5%, transparent 87%, #011027 87.5%, #011027), linear-gradient(60deg, #01102777 25%, transparent 25.5%, transparent 75%, #01102777 75%, #01102777), linear-gradient(60deg, #01102777 25%, transparent 25.5%, transparent 75%, #01102777 75%, #01102777);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+h1 {
+    font-size: 2rem;
+    text-wrap: balance;
+    color: white;
+}
+p {
+    color: white;
+    margin-top: 20px;
+}
+button {
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(1, 1, 95);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 5px black;
+    display: flex;
+    align-self: flex-start;
+}
+.copyright {
+    margin-top: 40px;
+}
+.copyright, .copyright a {
+    color: white;
+    display: flex;
+    align-self: flex-start;
+    font-size: 0.9rem;
+}
