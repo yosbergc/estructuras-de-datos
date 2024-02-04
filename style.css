@@ -73,6 +73,8 @@ button:active {
     border-radius: 16px;
     padding: 10px;
     transition: 0.2s;
+    color: white;
+    display: block;
 }
 .option:hover {
     cursor: pointer;
