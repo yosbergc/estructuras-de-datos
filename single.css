@@ -14,13 +14,13 @@ main {
 h1 {
     font-size: 2rem;
     text-wrap: balance;
-    color: white;
+    color: #f2ce77;
     padding: 20px 0px;
 }
 h2 {
     font-size: 1.5rem;
     text-wrap: balance;
-    color: white;
+    color: #f2ce77;
     padding: 20px 0px;
 }
 p {
@@ -75,4 +75,41 @@ header {
 }
 .hamburger-menu-icon {
     width: 30px;
+}
+.prev-next--container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-between;
+}
+.next,.prev {
+    background-color: #161614;
+    padding: 10px 10px;
+    border: 1px solid rgb(110, 110, 110);
+    border-radius: 5px;
+}
+.prev, .prev span {
+    text-align: right;
+}
+.prev-next--container a {
+    text-decoration: none;
+}
+span {
+    display: block;
+    color: white;
+    text-align: left;
+    font-weight: 700;
+    margin: 2px 0px;
+}
+i {
+    margin-left: 10px;
+    color: #f2ce77;
+}
+@media (min-width: 700px) {
+    .prev-next--container {
+        flex-direction: row;
+        width: 100%;
+        max-width: 800px;
+    }
 }

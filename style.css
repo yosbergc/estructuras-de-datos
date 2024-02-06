@@ -23,6 +23,9 @@ h1 {
     text-wrap: balance;
     color: white;
 }
+span {
+     color: #facc15;
+}
 p {
     color: white;
     margin-top: 20px;
