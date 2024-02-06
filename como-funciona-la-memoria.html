@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7adb9c563c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="single.css">
+    <title>¿Cómo funciona la memoria? - Bytdev</title>
+</head>
+<body>
+    <header>
+        <a href="/"><img src="website-logo.png" alt="Website logo" class="websiteLogo"></a>
+        <div class="mobile-header">
+            <img src="hamburger-icon.svg" alt="Hamburger menu" class="hamburger-menu-icon">
+        </div>
+    </header>
+    <main>
+        <article>
+            <section class="article-header">
+                <img src="memoria-ram.webp" alt="Memoria Ram">
+            </section>
+            <section class="article-content">
+                <h1>¿Cómo funciona la memoria?</h1>
+                <p>La memoria tal y la conocemos se maneja automáticamente por el motor de JavaScript (dependiendo del navegador que estemos usando) o por Node.js</p>
+                <p>En estos entornos de manejo de memoria contamos con dos tipos de memoria. La memoria stack, mejor conocida como pila, y la memoria heap, conocida como el montón.</p>
+                <ul>
+                    <li><b>Stack(Pila):</b> Es la memoria más rápida que tiene JavaScript, en esta se guardan los nombres de las variables y sus respectivos valores primitivos o referencia en memoria.</li>
+                    <li>
+                        <b>Heap(Montón):</b> En esta memoria se guardan los arrays y los objetos, ya que son valores compuestos. Estos se guardan también en la memoria stack, solo que no su valor directamente, sino con una referencia (apuntador) en la memoria heap.
+                    </li>
+                </ul>
+                <p>Un ejemplo de esto es que cuando le pedimos a JavaScript que queremos copiar el valor de una variable con un dato primitivo (número, string, booleano, etc), esta se copia sin ningún inconveniente al igual que los objetos y los arrays.</p>
+                <p>El problema sucede es cuando queremos editar estos datos, una vez editemos la copia de la variable original en los datos primitivos no habrá problema alguno, pero si hacemos lo mismo con un array o un objeto editará también el elemento original. Esto sucede ya que cuando copiamos un array o un objeto, copiamos su referencia en memoria y no sus valores.</p>
+        </article>
+        <section class="prev-next--container">
+            <a href="que-son-las-estructuras-de-datos.html">
+                <div class="prev">
+                    <span>Clase anterior</span>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    Qué son las estructuras de datos?
+                </div>
+                </a>
+            <a href="#">
+            <div class="next">
+                <span>Clase siguiente:</span>
+                Arrays<i class="fa-solid fa-chevron-right"></i>
+            </div>
+            </a>
+        </section>
+        <p class="copyright">Hecho con ❤️ por&nbsp;<a href="https://github.com/yosbergc"> Bytdev</a></p>
+    </main>
+</body>
+</html>
