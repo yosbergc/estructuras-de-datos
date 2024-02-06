@@ -63,3 +63,16 @@ figcaption {
 a {
     color: white;
 }
+.websiteLogo {
+    width: 40px;
+}
+header {
+    background-color: #0d0d0c;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hamburger-menu-icon {
+    width: 30px;
+}
