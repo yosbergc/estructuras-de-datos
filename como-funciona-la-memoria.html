@@ -14,9 +14,6 @@
 <body>
     <header>
         <a href="/"><img src="website-logo.png" alt="Website logo" class="websiteLogo"></a>
-        <div class="mobile-header">
-            <img src="hamburger-icon.svg" alt="Hamburger menu" class="hamburger-menu-icon">
-        </div>
     </header>
     <main>
         <article>
@@ -25,7 +22,7 @@
             </section>
             <section class="article-content">
                 <h1>¿Cómo funciona la memoria?</h1>
-                <p>La memoria tal y la conocemos se maneja automáticamente por el motor de JavaScript (dependiendo del navegador que estemos usando) o por Node.js</p>
+                <p>La memoria tal y la conocemos se maneja automáticamente por el motor de JavaScript, que puede ser V8 (usado tanto en Google Chrome como en Node.js), SpiderMonkey (usado en Firefox), entre otros.</p>
                 <p>En estos entornos de manejo de memoria contamos con dos tipos de memoria. La memoria stack, mejor conocida como pila, y la memoria heap, conocida como el montón.</p>
                 <ul>
                     <li><b>Stack(Pila):</b> Es la memoria más rápida que tiene JavaScript, en esta se guardan los nombres de las variables y sus respectivos valores primitivos o referencia en memoria.</li>
@@ -33,8 +30,7 @@
                         <b>Heap(Montón):</b> En esta memoria se guardan los arrays y los objetos, ya que son valores compuestos. Estos se guardan también en la memoria stack, solo que no su valor directamente, sino con una referencia (apuntador) en la memoria heap.
                     </li>
                 </ul>
-                <p>Un ejemplo de esto es que cuando le pedimos a JavaScript que queremos copiar el valor de una variable con un dato primitivo (número, string, booleano, etc), esta se copia sin ningún inconveniente al igual que los objetos y los arrays.</p>
-                <p>El problema sucede es cuando queremos editar estos datos, una vez editemos la copia de la variable original en los datos primitivos no habrá problema alguno, pero si hacemos lo mismo con un array o un objeto editará también el elemento original. Esto sucede ya que cuando copiamos un array o un objeto, copiamos su referencia en memoria y no sus valores.</p>
+                <p>Un aspecto importante a tener en cuenta es que cuando copiamos una variable que contiene un dato primitivo (como un número, string o booleano), se copia el valor sin problemas. Sin embargo, cuando copiamos un array o un objeto, lo que realmente estamos copiando es la referencia a ese objeto en el montón, no los valores del objeto en sí. Esto significa que si modificamos la copia de un array o un objeto, también estamos modificando el objeto original, ya que ambos apuntan a la misma ubicación en el montón</p>
         </article>
         <section class="prev-next--container">
             <a href="que-son-las-estructuras-de-datos.html">
@@ -44,7 +40,7 @@
                     Qué son las estructuras de datos?
                 </div>
                 </a>
-            <a href="#">
+            <a href="/arrays.html">
             <div class="next">
                 <span>Clase siguiente:</span>
                 Arrays<i class="fa-solid fa-chevron-right"></i>
