@@ -29,23 +29,40 @@
                     <li><b>Array dinámico:</b> Un array dinámico es un array que se puede modificar después de haber sido creado, este tipo de array nos permitiría agregar o eliminar elementos.</li>
                     <li><b>Array estático:</b> A diferencia del array dinámico, este array no puede modificarse (no podemos modificar su tamaño, agregando o eliminando elementos).</li>
                 </ul>
+                <h2>¿Cómo podríamos crear un array desde 0 con JavaScript?</h2>
+                <p>Para poder crear un array desde 0 hay que tener en cuenta todo lo que compone al array, desde que cada elemento debe tener su respectivo índice que va a incrementar una vez agreguemos más elementos y va a decrementar cada vez que eliminemos alguno.</p>
+                <p>Para crear un ejemplo de como funcionaría un array lo crearemos con el paradigma de la programación orientada a objetos, haremos uso de un objeto como lugar de almacenamiento de los datos y de una propiedad length que será la encargada de guardar el tamaño del array.</p>
+
+                <pre class="language-js">
+                    <code class="language-js">
+class array {
+    constructor() {
+        this.length = 0; // Iniciamos en 0
+        this.data = {};
+    }
+}
+                    </code>
+                </pre>
         </article>
         <section class="prev-next--container">
             <a href="como-funciona-la-memoria.html">
                 <div class="prev">
-                    <span>Clase anterior</span>
+                    <span class="span">Clase anterior</span>
                     <i class="fa-solid fa-chevron-left"></i>
                     Cómo funciona la memoria?
                 </div>
                 </a>
             <a href="/arrays.html">
             <div class="next">
-                <span>Clase siguiente:</span>
+                <span class="span">Clase siguiente:</span>
                 Hash Table<i class="fa-solid fa-chevron-right"></i>
             </div>
             </a>
         </section>
         <p class="copyright">Hecho con ❤️ por&nbsp;<a href="https://github.com/yosbergc"> Bytdev</a></p>
     </main>
+    <script src="
+https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-twilight.min.css">
 </body>
 </html>

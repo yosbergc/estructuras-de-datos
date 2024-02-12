@@ -101,7 +101,7 @@ header {
 .prev-next--container a {
     text-decoration: none;
 }
-span {
+.span {
     display: block;
     color: white;
     text-align: left;
@@ -111,6 +111,10 @@ span {
 i {
     margin-left: 10px;
     color: #f2ce77;
+}
+.language-js {
+    border: none !important;
+    box-shadow: none !important;
 }
 
 @media (min-width: 700px) {
